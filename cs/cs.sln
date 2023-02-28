@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{78228BAE-BD03-4341-8C60-CF036044D76A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rectangle_lib", "Rectangle_lib\Rectangle_lib.csproj", "{8B307580-0E5D-43BF-8ADE-7FD12DAD958A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78228BAE-BD03-4341-8C60-CF036044D76A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78228BAE-BD03-4341-8C60-CF036044D76A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78228BAE-BD03-4341-8C60-CF036044D76A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78228BAE-BD03-4341-8C60-CF036044D76A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B307580-0E5D-43BF-8ADE-7FD12DAD958A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B307580-0E5D-43BF-8ADE-7FD12DAD958A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B307580-0E5D-43BF-8ADE-7FD12DAD958A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B307580-0E5D-43BF-8ADE-7FD12DAD958A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
