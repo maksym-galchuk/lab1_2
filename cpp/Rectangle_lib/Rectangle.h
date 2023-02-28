@@ -23,6 +23,4 @@ public:
     double area();
     double perimeter();
     bool isRectangle();
-
-    std::String toString();
 };
