@@ -5,9 +5,25 @@ namespace Program;
 
 class Program {
     public static void Main(String[] args) {
-        // Choose the task you want to run (1 or 2) or -1 to exit the program.
-        
-        
+        string? task = "0";
+        while (task != "-1") {
+            Console.WriteLine("Choose the task you want to run (1 MainTask, 2 AdditionalTask, -1 to exit):");
+            task = Console.ReadLine();
+            switch (task) {
+                case "1":
+                    MainTask();
+                    break;
+                case "2":
+                    AdditionalTask();
+                    break;
+                case "-1":
+                    Console.WriteLine("Program ended.");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input. Try again.\n");
+                    break;
+            }
+        }
     }
 
     public static void MainTask() {
@@ -16,17 +32,17 @@ class Program {
             string? rawCoordinates = Console.ReadLine();
             
             if (rawCoordinates == null) {
-                Console.WriteLine("Invalid input. Try again.");
+                Console.WriteLine("Invalid input. Try again.\n");
                 continue;
             }
             if (rawCoordinates.ToLower() == "stop") {
-                Console.WriteLine("Program ended.");
+                Console.WriteLine("Task ended.\n");
                 break;
             }
             
             string[] coordinates = rawCoordinates.Split(',');
             if (coordinates.Length != 4) {
-                Console.WriteLine("Invalid input. Try again.");
+                Console.WriteLine("Invalid input. Try again.\n");
                 continue;
             }
             
@@ -37,7 +53,7 @@ class Program {
                 x2 = double.Parse(coordinates[2]);
                 y2 = double.Parse(coordinates[3]);
             } catch (FormatException) {
-                Console.WriteLine("Invalid input. Try again.");
+                Console.WriteLine("Invalid input. Try again.\n");
                 continue;
             }
             
